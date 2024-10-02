@@ -33,7 +33,7 @@ Este é um projeto de um blog simples desenvolvido em Flask, que exibe posts sob
 
 ```bash
 git clone https://github.com/iagooteles/blogPython.git
-cd nome_do_repositorio
+cd blogPython
 ```
 
 2. Crie um ambiente virtual (opcional, porém recomendado)
