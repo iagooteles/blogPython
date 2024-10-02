@@ -47,7 +47,7 @@ venv\Scripts\activate  # Windows
 3. Instale as dependências
 
 ```bash
-pip install
+pip install requirements.txt
 ```
 
 ### Uso
