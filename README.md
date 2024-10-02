@@ -41,13 +41,13 @@ cd blogPython
 ```bash
 python -m venv venv
 source venv/bin/activate  # Linux ou macOS
-venv\Scripts\activate  # Windows
+venv/Scripts/activate  # Windows
 ```
 
 3. Instale as dependências
 
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
 ```
 
 ### Uso
