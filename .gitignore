@@ -1,0 +1,23 @@
+# Ignorar pasta __pycache__
+__pycache__/
+
+# Ignorar arquivos de bytecode Python
+*.py[cod]
+
+# Ignorar ambientes virtuais
+env/
+venv/
+ENV/
+venv.bak/
+.env
+
+# Ignorar arquivos de configuração de IDE
+*.idea/
+*.vscode/
+
+# Ignorar arquivos de teste
+*.egg-info/
+*.egg
+
+# Ignorar arquivos de logs
+*.log
