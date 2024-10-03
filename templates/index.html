@@ -1,12 +1,5 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Title</title>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway" rel="stylesheet">
-    <link rel="stylesheet" href="../static/css/styles.css">
-</head>
-<body>
+{% include "header.html" %}
+
 <div class="wrapper">
     <div class="top">
         <div class="title"><h1>Blog sobre Python</h1></div>
@@ -17,15 +10,12 @@
         <div class="card ">
             <h2>{{ post.title }}</h2>
             <p>{{ post.subtitle }}</p>
-            <a class="btn" href="{{ url_for('show_post', index=post.id) }}">Ler postagem completa</a>
+            <a class="btn-card" href="{{ url_for('show_post', index=post.id) }}">Ler postagem completa</a>
         </div>
 
     </div>
     {% endfor %}
 
 </div>
-</body>
-<footer>
-    <p>Iago Teles | {{ currentYear }}</p>
-</footer>
-</html>
+
+{% include "footer.html" %}

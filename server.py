@@ -22,6 +22,11 @@ def get_all_posts():
     return render_template("index.html", all_posts=post_objects, currentYear=getCurrentYear())
 
 
+@app.route("/about")
+def about():
+    return render_template("about.html", currentYear=getCurrentYear())
+
+
 @app.route("/post/<int:index>")
 def show_post(index):
     requested_post = None

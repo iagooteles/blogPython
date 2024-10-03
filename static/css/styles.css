@@ -5,17 +5,40 @@ body{
  -webkit-font-smoothing: antialiased;
   color:#212121;
 }
+
+.navbar {
+  padding-top: 0 !important;
+  padding-bottom: 0 !important;
+}
+
 .wrapper{
   position: relative;
   clear:both;
   margin: 0 auto 75px auto;
   width: 100%;
   overflow: hidden;
+  margin-top: 3rem;
 }
-.top{
+
+.header-container {
   background: #185f10;
-  height: 180px;
-  border-top: 20px solid #082005;
+}
+
+.header-container button {
+  color: #fff;
+  border: none;
+}
+
+.header-container a {
+  color: #fff;
+  font-size: 1.2em;
+  font-weight: 600;
+
+  transition: color .3s ease-in-out;
+}
+
+.header-container a:hover {
+  color: #b4ffac;
 }
 
 .top .title {
@@ -63,16 +86,12 @@ footer {
   left: 0;
   bottom: 0;
   width: 100%;
-  background-color: #103f0b;
+  background-color: #185f10;
   color: white;
   text-align: center;
 }
 
-.wrapper {
-  position: relative;
-}
-
-.btn {
+.btn-card {
   display: inline-block;
   padding: 10px 20px;
   background-color: #1f7f15;
@@ -83,17 +102,19 @@ footer {
   font-size: 16px;
   transition: background-color 0.3s ease;
   
+  max-width: 250px;
+  margin: 16px auto 0;
   align-items: center;
 }
 
-.btn:hover {
+.btn-card:hover {
   background-color: #103f0b;
 }
 
 .close-btn {
   position: absolute;
   top: 10px;
-  right: 10px;
+  right: 20px;
 }
 
 .close-link {
@@ -106,4 +127,21 @@ footer {
 
 .close-link:hover {
   color: #082005;
+}
+
+.fas .fa-circle .fa-stack-2x {
+  color: #1f7f15;
+}
+
+.icon .fa-github {
+  color: #fff;
+}
+
+.icons-container {
+  padding: 6px 0;
+  margin: auto;
+}
+
+.about-container {
+  margin-top: 3rem;
 }

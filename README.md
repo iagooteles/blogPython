@@ -1,6 +1,6 @@
 # Blog sobre Python
 
-Este é um projeto de um blog simples desenvolvido em Flask, que exibe posts sobre Python. O blog lê dados de um arquivo JSON e renderiza as informações em páginas HTML.
+Este é um projeto de um blog simples desenvolvido em Flask, que exibe posts sobre Python. O blog lê dados de um arquivo JSON e renderiza as informações em páginas HTML. O objetivo desse blog é treinar rotas com python no backend, assim como utilizar jinja, bootstrap e js.
 
 ## Tecnologias Utilizadas
 
