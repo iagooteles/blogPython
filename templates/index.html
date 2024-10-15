@@ -1,21 +1,21 @@
 {% include "header.html" %}
 
 <div class="wrapper">
-    <div class="top">
-        <div class="title"><h1>Blog sobre Python</h1></div>
+  <div class="top">
+    <div class="title"><h1>Blog sobre Python</h1></div>
+  </div>
+
+  {% for post in all_posts: %}
+  <div class="content">
+    <div class="card">
+      <h2>{{ post.title }}</h2>
+      <p>{{ post.subtitle }}</p>
+      <a class="btn-card" href="{{ url_for('show_post', index=post.id) }}"
+        >Ler postagem completa</a
+      >
     </div>
-
-    {% for post in all_posts: %}
-    <div class="content">
-        <div class="card ">
-            <h2>{{ post.title }}</h2>
-            <p>{{ post.subtitle }}</p>
-            <a class="btn-card" href="{{ url_for('show_post', index=post.id) }}">Ler postagem completa</a>
-        </div>
-
-    </div>
-    {% endfor %}
-
+  </div>
+  {% endfor %}
 </div>
 
 {% include "footer.html" %}

@@ -1,9 +1,9 @@
-body{
- background: #efeff3;
- margin: 0;
- font-family: 'Raleway', sans-serif;
- -webkit-font-smoothing: antialiased;
-  color:#212121;
+body {
+  background-color: #c9b8a8 !important;
+  margin: 0;
+  font-family: 'Raleway', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  color: #212121;
 }
 
 .navbar {
@@ -11,9 +11,9 @@ body{
   padding-bottom: 0 !important;
 }
 
-.wrapper{
+.wrapper {
   position: relative;
-  clear:both;
+  clear: both;
   margin: 0 auto 75px auto;
   width: 100%;
   overflow: hidden;
@@ -21,7 +21,7 @@ body{
 }
 
 .header-container {
-  background: #185f10;
+  background: #391d34;
 }
 
 .header-container button {
@@ -38,77 +38,98 @@ body{
 }
 
 .header-container a:hover {
-  color: #b4ffac;
+  color: #a24d52;
 }
 
 .top .title {
   width: 700px;
-  margin: 38px auto 0 auto; 
+  margin: 38px auto 0 auto;
 }
 
 .title h1 {
-  font-size:24px;
-  color:#FFF;
-  font-weight:500;
+  font-size: 24px;
+  color: #FFF;
+  font-weight: 500;
 }
 
-.content{
-    margin: -80px auto 100px;
+.content {
+  margin: -80px auto 100px;
   padding-bottom: 20px;
 }
 
-.card{
+.card {
   position: relative;
-  background: #fff;
-  padding:50px;
+  background-color: #e6d3c1 !important;
+  padding: 50px;
   min-width: 400px;
   max-width: 800px;
   margin: 20px auto 0 auto;
-  box-shadow: 0 2px 4px rgba(100,100,100,.1);
+  box-shadow: 0 2px 4px rgba(100, 100, 100, .1);
 
   border-radius: 8px;
 }
 
 .card h2 {
-  font-size:21px;
-  font-weight:500;
+  font-size: 21px;
+  font-weight: 500;
 }
 
 .card p {
-  color:#212121;
-  margin-top:20px;
+  color: #212121;
+  margin-top: 20px;
   font-size: 1.2em;
-  line-height:24px;
+  line-height: 24px;
+}
+
+.about-content {
+  height: 80.2vh;
+}
+
+.thank-you-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #391d34;
+  font-size: 1.6rem;
+  font-weight: 700;
+
+  flex-direction: column;
+  height: 88vh;
+}
+
+.thank-you-container h2 {
+  font-size: 2.5rem;
 }
 
 footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
   width: 100%;
-  background-color: #185f10;
+  background-color: #391d34;
   color: white;
   text-align: center;
+}
+
+footer p {
+  margin: 0;
 }
 
 .btn-card {
   display: inline-block;
   padding: 10px 20px;
-  background-color: #1f7f15;
+  background-color: #f8af8c;
   color: white;
   text-align: center;
   text-decoration: none;
   border-radius: 5px;
   font-size: 16px;
   transition: background-color 0.3s ease;
-  
+
   max-width: 250px;
   margin: 16px auto 0;
   align-items: center;
 }
 
 .btn-card:hover {
-  background-color: #103f0b;
+  background-color: #a24d52;
 }
 
 .close-btn {
@@ -126,11 +147,11 @@ footer {
 }
 
 .close-link:hover {
-  color: #082005;
+  color: #391d34;
 }
 
 .fas .fa-circle .fa-stack-2x {
-  color: #1f7f15;
+  color: #391d34;
 }
 
 .icon .fa-github {
@@ -144,4 +165,59 @@ footer {
 
 .about-container {
   margin-top: 3rem;
+}
+
+.contact-me-container {
+  position: relative;
+  margin-bottom: 3rem;
+  padding-top: 10rem;
+  padding-bottom: 8rem;
+  background: no-repeat center;
+  background-color: #6c757d;
+  background-size: cover;
+  background-attachment: scroll;
+
+  text-align: center;
+  color: #fff;
+}
+
+.contact-me-container:before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #14171a;
+  opacity: 0.5;
+}
+
+.icone {
+  color: #391d34;
+
+  transition: 0.3s color ease-in-out;
+}
+
+.icone:hover {
+  color: #a24d52;
+}
+
+.btn-formulario {
+  width: 100%;
+  background-color: #391d34;
+  padding: 10px 0;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+}
+
+.btn-formulario:hover {
+  background-color: #a24d52;
+}
+
+.contact-me-text-container {
+  color: #391d34;
+  font-size: 1.4rem;
+  text-align: center;
+  font-weight: 700;
 }

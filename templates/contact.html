@@ -1,0 +1,120 @@
+{% include "header.html" %}
+
+<div
+  class="contact-me-container"
+  style="background-image: url('./../static/assets/img/contact-bg.jpg')"
+>
+  <div class="container position-relative px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="page-heading">
+          <h2>Quer falar comigo?</h2>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<main class="mb-4">
+  <div class="container px-4 px-lg-5">
+    <div class="row gx-4 gx-lg-5 justify-content-center">
+      <div class="col-md-10 col-lg-8 col-xl-7">
+        <div class="contact-me-text-container">
+          <p>
+            Preencha o formulário abaixo que recebemos sua mensagem por email e
+            entramos em contato em breve!
+          </p>
+          <p>Para conhecer meu github ou linkedin, clique nos ícones abaixo.</p>
+        </div>
+
+        <ul class="list-inline text-center icons-container">
+          <li class="list-inline-item">
+            <a
+              href="https://github.com/iagooteles"
+              target="_blank"
+              class="icone"
+            >
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-github fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+          <li class="list-inline-item">
+            <a
+              href="https://linkedin.com/in/iagooteles"
+              target="_blank"
+              class="icone"
+            >
+              <span class="fa-stack fa-lg">
+                <i class="fas fa-circle fa-stack-2x"></i>
+                <i class="fab fa-linkedin fa-stack-1x fa-inverse"></i>
+              </span>
+            </a>
+          </li>
+        </ul>
+
+        <div class="my-5">
+          <form id="contactForm" name="sentMessage" method="POST" action="/contact">
+            <div class="form-floating">
+              <input
+                class="form-control"
+                id="name"
+                name="name"
+                type="text"
+                placeholder="Digite seu nome..."
+                required
+              />
+              <label for="name">Nome</label>
+            </div>
+            <div class="form-floating">
+              <input
+                class="form-control"
+                id="email"
+                name="email"
+                type="email"
+                placeholder="Digite seu email..."
+                required
+              />
+              <label for="email">Email</label>
+            </div>
+            <div class="form-floating">
+              <input
+                class="form-control"
+                id="phone"
+                name="phone"
+                type="tel"
+                pattern="[0-9]*"
+                placeholder="Digite seu telefone..."
+                required
+              />
+              <label for="phone">Telefone</label>
+            </div>
+            <div class="form-floating">
+              <textarea
+                class="form-control"
+                id="message"
+                name="message"
+                placeholder="Escreva sua mensagem aqui..."
+                required
+                maxlength="500"
+                style="height: 12rem"
+              ></textarea>
+              <label for="message">Mensagem</label>
+            </div>
+            <br />
+            <button
+              class="btn-formulario text-uppercase"
+              id="submitButton"
+              type="submit"
+            >
+              Enviar
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</main>
+
+{% include "footer.html" %}
